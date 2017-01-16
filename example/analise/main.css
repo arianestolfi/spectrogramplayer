@@ -31,5 +31,15 @@ md-toolbar.md-toolbar-sm {
     min-width: 44px;
 }
 
+.audioPlayerWrapper {
+    position: relative;
+} 
+.info {
+
+    z-index: 100;
+}
+.waveSurferWave {
+    z-index: 0;
+}
 
 

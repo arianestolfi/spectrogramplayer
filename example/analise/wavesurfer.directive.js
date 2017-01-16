@@ -295,7 +295,8 @@
           }, defaults = {
             scrollParent: true,
             waveColor: 'violet',
-            progressColor: 'purple'
+            progressColor: 'purple',
+            height: 128
           };
 
           options = angular.extend(defaults, attributes, (control.properties || {}), options);
@@ -312,7 +313,8 @@
 
         spectrogram.init({
             wavesurfer: control.surfer,
-            container: '.spec'
+            container: '.spec' + control.title,
+            fftSamples: 256 
                     });
 
           });

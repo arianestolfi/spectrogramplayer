@@ -22,9 +22,11 @@
 
 </head>
 <body ng-controller="MainController">
+  
+    <!-- Long list, using previously loaded files-->
   <md-wavesurfer-audio player-wave-color="gray" ng-repeat="item in longList" player-progress-color="black"
                        player-backend="MediaElement">
-    <!-- Long list, using previously loaded files, need to test container.-->
+
     <md-wavesurfer-source src="{{item.url}}"
                           title="{{item.title}}"></md-wavesurfer-source>
 
