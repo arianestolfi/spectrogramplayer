@@ -1,5 +1,7 @@
 #[spectrogram player](https://spectro.codigo.xyz)
 
+versão 0.1
+
 Sample player and spectrogram, 
 for analyses on large number of samples.
 
@@ -52,7 +54,7 @@ wavesurfer.load('example/media/demo.wav');
 This is been specially developed for audio analyses of the samples from the project [Banda Aberta](https://banda.codigo.xyz), 
 
 ## Credits
-Developed by [Ariane Stolfi] https://github.com/arianestolfi), 
+Developed by [Ariane Stolfi] (https://github.com/arianestolfi), 
 based on angular.js and angular material examples on [wavesurfer.js](https://wavesurfer-js.org)
 
 ## License
