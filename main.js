@@ -1,6 +1,6 @@
 /**
  * Created by intelWorx on 19/11/2015.
- *ajusted by Ariane Stolfi, 10/01/2017
+ * adapted by Ariane Stolfi, 10/01/2017
  */
 (function () {
   'use strict';
