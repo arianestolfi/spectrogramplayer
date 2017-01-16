@@ -8,7 +8,7 @@ with the spectrogram plugin
 http://wavesurfer-js.org/example/spectrogram/
 Using angular.j with angular material
 
-![Screenshot](/pic.png?raw=true "screenshot")
+![Screenshot](/spec/pic.png?raw=true "screenshot")
 
 
 ## Browser support
