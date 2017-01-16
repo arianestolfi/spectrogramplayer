@@ -10,9 +10,13 @@
     })
     .controller('MainController', ['$scope',
       function ($scope) {
+
+        //to change the name of the samples folder
         $scope.folder = "samples_0/";
         $scope.extension = ".mp3";
         $scope.longList = [];
+        
+        //to change the number of the files
         //for (var i = 32; i < 126; i++) {
         //for (var i = 32; i < 79; i++) {
           for (var i = 33; i < 43; i++) {

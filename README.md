@@ -8,6 +8,9 @@ with the spectrogram plugin
 http://wavesurfer-js.org/example/spectrogram/
 Using angular.j with angular material
 
+![Screenshot](/pic.png?raw=true "screenshot")
+
+
 ## Browser support
 
 works only in [modern browsers supporting Web Audio](http://caniuse.com/audio-api).
@@ -45,63 +48,13 @@ you can rename the folder and files in main.js
 wavesurfer.load('example/media/demo.wav');
 ```
 
-## Documentation
-
-See the documentation on all available [methods](https://wavesurfer-js.org/docs/methods.html), [options](https://wavesurfer-js.org/docs/options.html) and [events](https://wavesurfer-js.org/docs/events.html) on the [homepage](https://wavesurfer-js.org/docs/).
 
 ## Related projects
-
-For a list of  projects using wavesurfer.js, check out
-[the projects page](https://wavesurfer-js.org/projects/).
-
-## Development
-
-
-Install `grunt-cli` using npm:
-
-```
-npm install -g grunt-cli
-```
-
-Install development dependencies:
-
-```
-npm install
-```
-
-Build a minified version of the library and plugins. This command also checks
-for code-style mistakes and runs the tests:
-
-```
-grunt
-```
-
-Generated files are placed in the `dist` directory.
-
-Running tests only:
-
-```
-grunt test
-```
-
-Creating a coverage report:
-
-```
-grunt coverage
-```
-
-The HTML report can be found in `coverage/html/index.html`.
-
-## Editing documentation
-The homepage and documentation files are maintained in the [`gh-pages` branch](https://github.com/katspaugh/wavesurfer.js/tree/gh-pages). Contributions to the documentation are especially welcome.
+This is been specially developed for audio analyses of the samples from the project [Banda Aberta](https://banda.codigo.xyz), 
 
 ## Credits
-Developed by [Ariane Stolfi] https://github.com/arianestolfi, 
-based on angular 
-
-Initial idea by [Alex Khokhulin](https://github.com/xoxulin). Many
-thanks to
-[the awesome contributors](https://github.com/katspaugh/wavesurfer.js/contributors)!
+Developed by [Ariane Stolfi] https://github.com/arianestolfi), 
+based on angular.js and angular material examples on [wavesurfer.js](https://wavesurfer-js.org)
 
 ## License
 
