@@ -1,12 +1,11 @@
-#[spectogram_player](https://spectro.codigo.xyz)
+#[spectrogram player](https://spectro.codigo.xyz)
 
 Sample player and spectrogram, 
 for analyses on large number of samples.
 
 based on [wavesurfer.js](https://wavesurfer-js.org)
-with the spectrogram plugin
-http://wavesurfer-js.org/example/spectrogram/
-Using angular.j with angular material
+with the [spectrogram plugin](http://wavesurfer-js.org/example/spectrogram/)
+Using angular.js with angular material
 
 ![Screenshot](/spec/pic.png?raw=true "screenshot")
 
