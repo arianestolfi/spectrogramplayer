@@ -1,10 +1,53 @@
-.track {
-	position: relative;
+.text-center {
+    text-align: center !important;
 }
 
-.title {
-	position: absolute;
-	top:0;
+.text-left {
+    text-align: left !important;;
+}
+
+.text-right {
+    text-align: right !important;;
+}
+
+.text-justify {
+    text-align: justify !important;;
+}
+
+md-icon[md-font-icon] {
+    font-size: 24px;
+}
+
+md-toolbar.md-toolbar-sm .md-toolbar-tools {
+    max-height: 32px;
+    padding: 6px;
+    font-size: 16px;
+}
+
+md-toolbar.md-toolbar-sm {
+    min-height: 24px;
+}
+.md-player-controls .md-button {
+    min-width: 44px;
+}
+
+.audioPlayerWrapper {
+    position: relative;
+} 
+.info {
+
+    z-index: 100;
+}
+.waveSurferWave {
+    z-index: 0;
 }
 
 
+.big {
+    color:red;
+    font-size: 126px;
+}
+
+.disabled {
+    color:#333;
+}

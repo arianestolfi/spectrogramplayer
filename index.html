@@ -17,23 +17,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.0-rc3/angular-material.min.js"></script>
     <script type="text/javascript" src="dist/wavesurfer.min.js"></script>
     <script type="text/javascript" src="wavesurfer.directive.js"></script>
-            <!-- spectrogram format renderer -->
     <script src="dist/plugin/wavesurfer.spectrogram.min.js"></script>
-
     <script type="text/javascript" src="main.js"></script>
 
 </head>
 <body ng-controller="MainController">
   
+    <!-- Long list, using previously loaded files-->
+  <md-wavesurfer-audio player-wave-color="gray" ng-repeat="item in longList" player-progress-color="black"
+                       player-backend="MediaElement">
 
-
-  <md-wavesurfer-audio player-wave-color="gray" player-progress-color="black"
-                       player-backend="MediaElement" ng-repeat="item in longList">
     <md-wavesurfer-source src="{{item.url}}"
-                          title="{{item.title}}" ></md-wavesurfer-source>
+                          title="{{item.title}}"></md-wavesurfer-source>
+
+
   </md-wavesurfer-audio>
-
-
-
 </body>
 </html>

@@ -1,25 +1,21 @@
-<div layout="column">
+
+
     <div ng-transclude=""></div>
-    <div>
-        
-            <div class="track" id="itemid{{$index+1}}" ng-repeat="track in audio.tracks" md-start-index="audio.selectedIndex"
+    <div class="info">
+        <md-virtual-repeat-container style="height: 50px">
+            <md-list-item md-virtual-repeat="track in audio.tracks" md-start-index="audio.selectedIndex"
                           ng-click="audio.setTrack($index, true)">
-                <div class="title">
-                    {{track.title}}
+                <p>
+                    {{track.title}}.mp3 | {{track.duration | mdWavesurferTimeFormat}}
                 </p>
 
-               <!-- <div class="text-right md-secondary">
-                    {{track.duration | mdWavesurferTimeFormat}}
-                </div>
-                -->
-            </div>
-
+            </md-list-item>
+        </md-virtual-repeat-container>
     </div>
     <md-wavesurfer-player
             url="{{audio.currentTrack.src}}#{{audio.selectedIndex}}"
-            title="{{audio.selectedIndex+1}}. {{audio.currentTrack.title}}"
+            title="{{audio.currentTrack.title}}"
             extra-buttons="audio.extraButtons"
             properties="audio.playerProperties"
     >
     </md-wavesurfer-player>
-</div>

@@ -42,4 +42,11 @@ md-toolbar.md-toolbar-sm {
     z-index: 0;
 }
 
+.big {
+    color:red;
+    font-size: 126px;
+}
 
+.disabled {
+    color:#333;
+}

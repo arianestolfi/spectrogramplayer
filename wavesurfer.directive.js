@@ -86,7 +86,7 @@
 
       var minutes = Math.floor(input / 60);
       var seconds = Math.ceil(input) % 60;
-      
+
       return (minutes < 10 ? '0' : '')
         + minutes
         + ":"
@@ -295,7 +295,8 @@
           }, defaults = {
             scrollParent: true,
             waveColor: 'violet',
-            progressColor: 'purple'
+            progressColor: 'purple',
+            height: 128
           };
 
           options = angular.extend(defaults, attributes, (control.properties || {}), options);
@@ -307,6 +308,15 @@
               control.surfer.play();
             }
             $scope.$apply();
+        // Init spectrogram plugin
+        var spectrogram = Object.create(WaveSurfer.Spectrogram);
+
+        spectrogram.init({
+            wavesurfer: control.surfer,
+            container: '.spec' + control.title,
+            fftSamples: 256 
+                    });
+
           });
 
           control.surfer.on('pause', function () {

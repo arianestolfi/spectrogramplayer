@@ -13,13 +13,14 @@
 
 
 <div flex="5">
-                    <md-button ng-disabled="!control.isReady" type="button" ng-click="control.surfer.playPause()">
+                    <div ng-disabled="!control.isReady" type="button" ng-click="control.surfer.playPause()" class="big">
                     <md-tooltip>
                         {{control.surfer.isPlaying() ? 'Pause' : 'Play'}}
                     </md-tooltip>
-                    <md-icon ng-show="control.surfer.isPlaying()" md-font-icon="zmdi zmdi-pause"></md-icon>
-                    <md-icon ng-show="!control.surfer.isPlaying()" md-font-icon="zmdi zmdi-play"></md-icon>
-                    </md-button>
+                    <span ng-show="control.surfer.isPlaying()" id="play{{control.title}}">&#9612;</span class="big">
+                    <span ng-show="!control.surfer.isPlaying()"  class="big">►</span>
+
+                    </div>
                 
 </div>
 </div>
