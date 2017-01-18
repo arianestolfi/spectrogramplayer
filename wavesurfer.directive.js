@@ -86,13 +86,28 @@
 
       var minutes = Math.floor(input / 60);
       var seconds = Math.ceil(input) % 60;
-
+      //var mseconds = input % 60;
+      //mseconds = seconds * 1000 - mseconds;
+      
+      //console.log(input);
       return (minutes < 10 ? '0' : '')
         + minutes
         + ":"
-        + (seconds < 10 ? '0' : '') + seconds;
+        + (seconds < 10 ? '0' : '') + seconds ;
     };
   });
+
+    app.filter('toASCII', function () {
+    return function (input) {
+      if (!input) {
+        return "_";
+      }
+      var char = String.fromCharCode(input);
+      //console.log(input);
+      return char ;
+    };
+  });
+
 
 
   app.controller('mdWavesurferAudioController', ['$attrs', '$element',

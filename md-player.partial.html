@@ -18,8 +18,8 @@
                         {{control.surfer.isPlaying() ? 'Pause' : 'Play'}}
                     </md-tooltip>
                     <span ng-show="control.surfer.isPlaying()" id="play{{control.title}}" class=
-                    "disabled">►</span class="big">
-                    <span ng-show="!control.surfer.isPlaying()"  class="big">►</span>
+                    "disabled">{{control.title | toASCII}}</span class="big">
+                    <span ng-show="!control.surfer.isPlaying()"  class="big">{{control.title | toASCII}}</span>
                 
 </div>
 </div>
