@@ -1,18 +1,18 @@
 <div layout="row" class="audioPlayerWrapper"> 
-<div flex="45" >
+<div flex="95" style="position:absolute; opacity:0.9; width:100%" >
     <md-content>
         <div class="spec{{control.title}}"></div>
      </md-content>  
  </div>
 
-<div flex="45" >
+<div flex="95" style="position:absolute; opacity:0.6; width:100%">
     <md-content>
         <div class="waveSurferWave" ng-click="control.surfer.play()"></div>
        </md-content>  
  </div>
 
 
-<div flex="5">
+<div flex="5" style="position:relative; width:100%; height:100%; left: 95%">
                     <div ng-disabled="!control.isReady" type="button" ng-click="control.surfer.playPause()" class="big">
                     <md-tooltip>
                         {{control.surfer.isPlaying() ? 'Pause' : 'Play'}}
