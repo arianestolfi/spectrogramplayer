@@ -1,3 +1,9 @@
+body {
+    background-color: #fff;
+    border: 1px solid red;
+    font-family: "helvetica", "arial", sans-serif;
+}
+
 .text-center {
     text-align: center !important;
 }
@@ -33,10 +39,31 @@ md-toolbar.md-toolbar-sm {
 
 .audioPlayerWrapper {
     position: relative;
+    height: 128px;
+    overflow: hidden;
+    width: calc(100% - 100px);
+    margin-left: 100px;
 } 
-.info {
 
+.window {
+    position: relative;
+}
+
+.info {
     z-index: 100;
+    position: absolute;
+    font-size: 12px;
+    top: 0px;
+    width: 100px;
+    height: 128px
+}
+
+.info .text {
+    margin: 5px;
+}
+
+.info p {
+    margin-top: 5px;
 }
 .waveSurferWave {
     z-index: 0;
@@ -50,4 +77,20 @@ md-toolbar.md-toolbar-sm {
 
 .disabled {
     color:#333;
+}
+
+.player {
+    position: relative;
+}
+
+.spectro {
+    position: relative;
+    top: 0px;
+    z-index: 1;
+}
+
+.waveSurferWave {
+position: relative;
+top: -128px;
+z-index: 20;
 }

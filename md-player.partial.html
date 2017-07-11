@@ -1,25 +1,14 @@
 <div layout="row" class="audioPlayerWrapper"> 
-<div flex="95" style="position:absolute; opacity:0.9; width:100%" >
-    <md-content>
-        <div class="spec{{control.title}}"></div>
-     </md-content>  
+<div class="window">
+    
+        <div class="spec{{control.title}} spectro"></div>
+     
  </div>
 
-<div flex="95" style="position:absolute; opacity:0.6; width:100%">
-    <md-content>
-        <div class="waveSurferWave" ng-click="control.surfer.play()"></div>
+<div >
+    
+        <div class="waveSurferWave" ng-click="control.surfer.play()"> </div>
        </md-content>  
  </div>
 
-
-<div flex="5" style="position:relative; width:100%; height:100%; left: 95%">
-                    <div ng-disabled="!control.isReady" type="button" ng-click="control.surfer.playPause()" class="big">
-                    <md-tooltip>
-                        {{control.surfer.isPlaying() ? 'Pause' : 'Play'}}
-                    </md-tooltip>
-                    <span ng-show="control.surfer.isPlaying()" id="play{{control.title}}" class=
-                    "disabled">{{control.title | toASCII}}</span class="big">
-                    <span ng-show="!control.surfer.isPlaying()"  class="big">{{control.title | toASCII}}</span>
-                
-</div>
 </div>

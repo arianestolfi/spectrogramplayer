@@ -7,9 +7,7 @@
     <link href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'
           rel='stylesheet' type='text/css'>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.0-rc3/angular-material.min.css"
-          rel="stylesheet" type="text/css"/>
-
+  
     <link rel="stylesheet" href="main.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-animate.min.js"></script>
@@ -21,10 +19,10 @@
     <script type="text/javascript" src="main.js"></script>
 
 </head>
-<body ng-controller="MainController">
+<body ng-controller="MainController" >
   
     <!-- Long list, using previously loaded files-->
-  <md-wavesurfer-audio player-wave-color="gray" ng-repeat="item in longList" player-progress-color="black" player-backend="MediaElement">
+  <md-wavesurfer-audio player-wave-color="black" ng-repeat="item in longList" player-progress-color="black" player-backend="MediaElement">
 
     <md-wavesurfer-source src="{{item.url}}"
                           title="{{item.title}}"></md-wavesurfer-source>
