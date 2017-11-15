@@ -5,7 +5,7 @@
             <div ng-repeat="track in audio.tracks" 
                           ng-click="audio.setTrack($index, true)">
                 <div class="text">
-                     {{track.duration | mdWavesurferTimeFormat}} | {{track.title}}.mp3 </b>
+                     {{track.duration | mdWavesurferTimeFormat}} | {{track.title}}.mp3 {{track.title | toASCII}}</b>
                 </div>
                 <div class="big">
                 &#9658;

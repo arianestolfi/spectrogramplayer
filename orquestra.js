@@ -12,7 +12,7 @@
       function ($scope) {
 
         //to change the name of the samples folder
-        $scope.folder = "samples_0/";
+        $scope.folder = "../banda/samples_3/";
         $scope.extension = ".mp3";
         $scope.longList = [];
         
